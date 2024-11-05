@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fresh Detox - Nước detox organic</title>
+    
+    <!-- Bootstrap 5 & Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #45a049;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('/api/placeholder/1920/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+
+        .benefits-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .btn-detox {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-detox:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        .category-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/api/placeholder/120/40" alt="Fresh Detox Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">Lợi ích</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-detox me-2">
+                        <i class="fas fa-shopping-cart me-2"></i>
+                        Giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Fresh Detox</h1>
+            <p class="lead mb-4">Nước detox organic - Cho cuộc sống khỏe mạnh hơn</p>
+            <button class="btn btn-detox btn-lg">Khám phá ngay</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5" id="products">
+        <div class="container">
+            <h2 class="text-center mb-5">Sản phẩm nổi bật</h2>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-4">
+                    <div class="product-card h-100">
+                        <div class="position-relative">
+                            <img src="/api/placeholder/400/300" class="product-image w-100" alt="Detox táo xanh">
+                            <span class="category-badge">Bestseller</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Detox Táo Xanh</h5>
+                            <p class="card-text">Kết hợp táo xanh, dưa leo và bạc hà tươi</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">59.000₫</span>
+                                <button class="btn btn-detox">
+                                    <i class="fas fa-shopping-cart me-2"></i>Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-4">
+                    <div class="product-card h-100">
+                        <div class="position-relative">
+                            <img src="/api/placeholder/400/300" class="product-image w-100" alt="Detox cam đỏ">
+                            <span class="category-badge">Mới</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Detox Cam Đỏ</h5>
+                            <p class="card-text">Cam, dâu tây và lựu tươi nguyên chất</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">65.000₫</span>
+                                <button class="btn btn-detox">
+                                    <i class="fas fa-shopping-cart me-2"></i>Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-4">
+                    <div class="product-card h-100">
+                        <div class="position-relative">
+                            <img src="/api/placeholder/400/300" class="product-image w-100" alt="Detox rau củ">
+                            <span class="category-badge">Organic</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Detox Rau Củ</h5>
+                            <p class="card-text">Cà rốt, cần tây và gừng tươi</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">55.000₫</span>
+                                <button class="btn btn-detox">
+                                    <i class="fas fa-shopping-cart me-2"></i>Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5 bg-light" id="benefits">
+        <div class="container">
+            <h2 class="text-center mb-5">Lợi ích của Detox</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-heart benefits-icon"></i>
+                    <h4>Tăng cường sức khỏe</h4>
+                    <p>Giúp cơ thể thanh lọc, đào thải độc tố</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-wind benefits-icon"></i>
+                    <h4>Tăng năng lượng</h4>
+                    <p>Cung cấp vitamin và khoáng chất tự nhiên</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-weight benefits-icon"></i>
+                    <h4>Kiểm soát cân nặng</h4>
+                    <p>Hỗ trợ giảm cân và đốt cháy mỡ thừa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Về Fresh Detox</h5>
+                    <p>Chuyên cung cấp nước detox organic từ nguồn nguyên liệu tự nhiên, an toàn cho sức khỏe.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liên hệ</h5>
+                    <p>
+                        <i class="fas fa-phone me-2"></i>0123.456.789<br>
+                        <i class="fas fa-envelope me-2"></i>hello@freshdetox.com<br>
+                        <i class="fas fa-map-marker-alt me-2"></i>123 Đường ABC, Quận 1, TP.HCM
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Theo dõi chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-tiktok fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
